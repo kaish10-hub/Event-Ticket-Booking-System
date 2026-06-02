@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Ticket Booking</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">EventBook</h1>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h2>Book Your Favorite Events Easily</h2>
+      <p>
+        Movies, concerts, sports events and more —
+        all in one place.
+      </p>
+      <a href="#events" class="hero-btn">Explore Events</a>
+    </div>
+  </header>
+
+  <!-- INTRO SECTION -->
+  <section class="intro">
+
+  <h2>
+    Why Choose EventBook?
+  </h2>
+
+  <p class="intro-text">
+    We make event booking simple, secure and hassle-free.
+    Discover events, choose your seats and get instant confirmations.
+  </p>
+
+  <div class="features-grid">
+
+    <div class="feature-card">
+      <div class="icon">🎟️</div>
+      <h3>Easy Booking</h3>
+      <p>
+        Book tickets in just a few clicks.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">⚡</div>
+      <h3>Instant Confirmation</h3>
+      <p>
+        Get booking confirmation instantly.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">🔒</div>
+      <h3>Secure Payments</h3>
+      <p>
+        Safe and secure payment process.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon">🎭</div>
+      <h3>Multiple Events</h3>
+      <p>
+        Movies, concerts, sports and more.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EVENTS SECTION -->
+<section class="events" id="events">
+
+  <h2 class="section-title">Popular Events</h2>
+
+  <div class="event-container">
+
+    <!-- EVENT 1 -->
+    <div class="event-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba"
+        alt="Movie"
+      >
+
+      <div class="card-content">
+
+        <h3>Avengers Movie Night</h3>
+
+        <p>Date: 28 May 2026</p>
+        <p>Location: Delhi</p>
+
+        <div class="details">
+          <p>Venue: PVR Cinemas</p>
+          <p>Time: 7:00 PM</p>
+          <p>Price: ₹499</p>
+          <p>Available Seats: 120</p>
+        </div>
+
+        <button class="toggle-btn">
+          Show Details
+        </button>
+
+        <button
+          class="book-btn"
+          data-event="Avengers Movie Night"
+        >
+          Book Now
+        </button>
+
+      </div>
+    </div>
+
+    <!-- EVENT 2 -->
+    <div class="event-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a"
+        alt="Concert"
+      >
+
+      <div class="card-content">
+
+        <h3>Live Music Concert</h3>
+
+        <p>Date: 2 June 2026</p>
+        <p>Location: Mumbai</p>
+
+        <div class="details">
+          <p>Venue: NSCI Dome</p>
+          <p>Time: 8:30 PM</p>
+          <p>Price: ₹999</p>
+          <p>Available Seats: 80</p>
+        </div>
+
+        <button class="toggle-btn">
+          Show Details
+        </button>
+
+        <button
+          class="book-btn"
+          data-event="Live Music Concert"
+        >
+          Book Now
+        </button>
+
+      </div>
+    </div>
+
+    <!-- EVENT 3 -->
+    <div class="event-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e"
+        alt="Cricket"
+      >
+
+      <div class="card-content">
+
+        <h3>Cricket Championship</h3>
+
+        <p>Date: 10 June 2026</p>
+        <p>Location: Bengaluru</p>
+
+        <div class="details">
+          <p>Venue: Chinnaswamy Stadium</p>
+          <p>Time: 6:00 PM</p>
+          <p>Price: ₹799</p>
+          <p>Available Seats: 150</p>
+        </div>
+
+        <button class="toggle-btn">
+          Show Details
+        </button>
+
+        <button
+          class="book-btn"
+          data-event="Cricket Championship"
+        >
+          Book Now
+        </button>
+
+      </div>
+    </div>
+
+    <!-- EVENT 4 -->
+    <div class="event-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1516280440614-37939bbacd81"
+        alt="Comedy"
+      >
+
+      <div class="card-content">
+
+        <h3>Stand-Up Comedy Night</h3>
+
+        <p>Date: 15 June 2026</p>
+        <p>Location: Noida</p>
+
+        <div class="details">
+          <p>Venue: Comedy Club</p>
+          <p>Time: 9:00 PM</p>
+          <p>Price: ₹399</p>
+          <p>Available Seats: 60</p>
+        </div>
+
+        <button class="toggle-btn">
+          Show Details
+        </button>
+
+        <button
+          class="book-btn"
+          data-event="Stand-Up Comedy Night"
+        >
+          Book Now
+        </button>
+
+      </div>
+    </div>
+
+    <!-- EVENT 5 -->
+    <div class="event-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f"
+        alt="Festival"
+      >
+
+      <div class="card-content">
+
+        <h3>Summer DJ Festival</h3>
+
+        <p>Date: 22 June 2026</p>
+        <p>Location: Goa</p>
+
+        <div class="details">
+          <p>Venue: Beach Arena</p>
+          <p>Time: 5:00 PM</p>
+          <p>Price: ₹1499</p>
+          <p>Available Seats: 200</p>
+        </div>
+
+        <button class="toggle-btn">
+          Show Details
+        </button>
+
+        <button
+          class="book-btn"
+          data-event="Summer DJ Festival"
+        >
+          Book Now
+        </button>
+
+      </div>
+    </div>
+
+    <!-- EVENT 6 -->
+    <div class="event-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1511578314322-379afb476865"
+        alt="Tech"
+      >
+
+      <div class="card-content">
+
+        <h3>Tech Innovation Summit</h3>
+
+        <p>Date: 30 June 2026</p>
+        <p>Location: Hyderabad</p>
+
+        <div class="details">
+          <p>Venue: HITEX Exhibition Center</p>
+          <p>Time: 10:00 AM</p>
+          <p>Price: ₹699</p>
+          <p>Available Seats: 250</p>
+        </div>
+
+        <button class="toggle-btn">
+          Show Details
+        </button>
+
+        <button
+          class="book-btn"
+          data-event="Tech Innovation Summit"
+        >
+          Book Now
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- BOOKING FORM -->
+<section class="booking-section" id="booking">
+
+  <div class="booking-wrapper">
+
+    <div class="booking-header">
+
+      <span class="booking-tag">
+        🎟 Secure Booking
+      </span>
+
+      <h2 class="section-title">
+        Complete Your Booking
+      </h2>
+
+      <p>
+        Fill your details and reserve your seat instantly.
+      </p>
+
+    </div>
+
+    <div class="booking-card">
+
+      <form id="bookingForm">
+
+        <input
+          type="text"
+          id="name"
+          placeholder="👤 Enter Your Name"
+        >
+
+        <input
+          type="email"
+          id="email"
+          placeholder="📧 Enter Your Email"
+        >
+
+        <input
+          type="text"
+          id="selectedEvent"
+          readonly
+          placeholder="🎫 Selected Event"
+        >
+
+        <input
+          type="number"
+          id="tickets"
+          placeholder="🎟 Number of Tickets"
+          min="1"
+        >
+
+        <button type="submit">
+          Confirm Booking
+        </button>
+
+      </form>
+
+      <div class="booking-info">
+
+        <h3>Why Book With Us?</h3>
+
+        <div class="feature">
+          ✅ Instant Confirmation
+        </div>
+
+        <div class="feature">
+          🔒 Secure Booking
+        </div>
+
+        <div class="feature">
+          🎟 Easy Ticket Access
+        </div>
+
+        <div class="feature">
+          📞 24/7 Support
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+
+    <h3>EventBook</h3>
+
+    <p>Email: support@eventbook.com</p>
+    <p>Phone: +91 9876543210</p>
+
+    <div class="social-icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+
+    <p class="copyright">
+      © 2026 EventBook. All Rights Reserved.
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
