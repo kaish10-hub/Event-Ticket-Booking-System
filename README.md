@@ -88,7 +88,7 @@ The website is fully responsive and works on:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/event-ticket-booking.git
+git clone https://github.com/kaish10-hub/Event-Ticket-Booking-System.git
 ```
 2. Open the project folder
 3. Run index.html in your browser
